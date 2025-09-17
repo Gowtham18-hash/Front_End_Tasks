@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    .container{
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        text-align: center;
+        /* justify-content: center; */
+        /* padding: 70px; */
+        gap: 20px;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 50px;  
+        }
+        .header{
+            grid-column: span 4;
+            background-image: linear-gradient(to right,rgb(126, 21, 223),rgb(156, 220, 248));
+        }
+        .sidebar{
+            grid-row: span 2;
+            align-content: center;
+            background-color: rgb(42, 245, 167);
+            
+        }
+        .content1{
+            grid-column: span 3;
+            background-image: linear-gradient(to right,rgb(126, 21, 223),rgb(156, 220, 248));
+        }
+        .content3{
+            grid-column: span 2;
+            background-image: linear-gradient(to right,rgb(126, 21, 223),rgb(156, 220, 248));
+        }
+        .content2{
+            background-image: linear-gradient(to right,rgb(126, 21, 223),rgb(156, 220, 248));
+        }
+        .footer{
+            grid-column: span 4;
+            background-image: linear-gradient(to right,rgb(126, 21, 223),rgb(156, 220, 248));
+        }
+</style>
+<body>
+    <h1>Display grid by Gowtham B</h1>
+   <div class="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content1">Content1</div>
+        <div class="box content2">Content2</div>
+        <div class="box content3">Content3</header></div>
+        <div class="box footer">Footer</div>
+   </div>
+</body>
+</html>

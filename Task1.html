@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topic {
+            padding-left: 20px;
+            border: 5px solid black;
+            background-color: orange;
+        }
+
+        #content {
+            font-size: 30px;
+            padding: 10px;
+            margin-top: 30px;
+            border: 5px solid rgb(6, 6, 132);
+            background-color: rgb(139, 139, 220);
+        }
+
+        #content1 {
+            font-size: 30px;
+            padding: 10px;
+            margin-top: 30px;
+            border: 5px solid rgb(6, 6, 132);
+            background-color: rgb(139, 139, 224);
+        }
+
+        li:first-child {
+            padding: 5px;
+            background-color: yellow;
+            font-size: large;
+        }
+
+        li:nth-child(3) {
+            padding: 5px;
+            background-color: yellow;
+            font-size: large;
+        }
+
+        ul {
+            font-size: large;
+            color: red;
+        }
+
+        .bottom {
+            margin-top: 40px;
+            padding: 10px;
+            border: 5px solid blue;
+            background-color: aqua;
+        }
+
+        #inside-text {
+            padding: 25px 0px;
+            border: 5px solid black;
+            background-color: white;
+        }
+
+        #margin {
+            margin-right: 100px;
+            margin-top: 100px;
+            color: black;
+            border: 3px solid green;
+            padding: 30px;
+            background-color: green;
+     
+                        
+        }
+        #border{
+            color: black;
+            border: 3px solid orange;
+            padding: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            background-color: orange;
+            margin-bottom: 50px;
+        }
+        #padding{
+            color: black;
+            border: 3px solid blue;
+            padding: 20px;
+            background-color: blue;
+            margin: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        #con{
+            color: white;
+            border: 3px solid red;
+            padding:50px;
+            background-color: red;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+        .text{
+            text-align: center;
+        }
+        /* h1{
+            font-style: italic;
+            color: black;
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Gowtham B (Java development batch)</h1>
+    <div class="topic">
+        <h1>Box Model</h1><br>
+    </div>
+    <div id="content">
+        <p>Every elament in the pages has its own box which can be styled by using CSS</p>
+    </div>
+    <div id="content1">
+        <p>From the inside out</p>
+    </div>
+    <ul>
+        <li>border</li>
+        <li style="padding: 5px;">margin</li>
+        <li>padding</li>
+        <li style="padding: 5px;" ,>background</li>
+    </ul>
+    <h1>Background</h1>
+    <div class="bottom">
+        <p>Keep in mind that <span id="inside-text">Background</span>will cover the content and padding</p>
+    </div>
+
+    <div id="margin">
+        <h2 class="text">Margin</h2>
+        <div id="border">
+            <h2 class="text">Border</h2>
+            <div id="padding">
+                <h2 class="text">Padding</h2>
+                <div id="con">
+                    <h2 class="text">Content</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

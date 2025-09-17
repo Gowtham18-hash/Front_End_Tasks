@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity3</title>
+</head>
+<style>
+     html{
+         font-family: Arial, Helvetica, sans-serif;
+         background-image: linear-gradient(to right,white,gray);
+    }
+    #name{
+        color: black;
+        font-style: italic;
+        text-align: left;
+        font-size: larger
+    }
+    h1{
+        color: purple;
+        text-align: center;
+        font-size: 50px;
+    }
+    .highlight{
+        background-color: rgb(7, 94, 94);
+        border-radius: 5px;
+        color: white;
+        padding: 5px;
+    }
+    #this1::first-letter{
+        font-size: 30px;
+        color: brown;
+    }
+    #special::first-letter{
+       font-size: 30px;
+        color: brown;
+    }
+    #special{
+        border: 2px solid red;
+    }
+    .sticky-box{
+        padding: 10px;
+        font-weight:bold;
+        position: sticky;
+        top: 0;
+        background-image: linear-gradient(to right,rgb(211, 39, 188),lightpink);
+    }
+    #lorem::first-letter{
+        font-size: 30px;
+        color: brown;
+    }
+    #pseudo::first-letter{
+        font-size: 30px;
+        color: brown;
+    }
+    a{
+        color: forestgreen;
+        text-decoration:dotted;
+        border-bottom: 1px dashed green;
+    }
+    input:hover{
+        border: 3px solid black;
+        border-radius: 3px;
+    }
+    .box{
+        border: 3px solid black;
+        margin-right: 850px ;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: rgb(255, 255, 218);
+    }   
+    .relative-box{
+        border: 2px solid black;
+        margin-right: 900px;
+        margin-left: 20px;
+        padding:20px;
+        background-color: rgb(234, 120, 79);
+    }
+    .absolute-box{
+        font-size: small;
+        border: 2px solid black;
+        padding:15px;
+        background-color: rgb(55, 228, 255);
+        position:absolute;
+        left: 80%;
+        top: 173px;
+        right: 100px;
+    }
+    .fixed-box{
+        border: 2px solid black;
+        padding:20px;
+        background-color: yellow;
+        position:fixed  ;
+        top :500px;
+        left:85%;
+    }
+    #space{
+        border:1px solid black;
+        padding: 100px;
+        border-radius: 15%;
+        background-image: radial-gradient(blue,rgb(0, 200, 255),rgb(150, 150, 188),black);
+    }
+    ul{
+        padding:0px;
+        margin-left:10px;
+    }
+</style>
+<body>
+      <h1>🎯 CSS Practice Playground</h1>   <h1 id="name">Gowtham Bakkiyaraj</h1>
+      <h2 class="highlight">1. Basic Selectors</h2>
+  <p id="this1">This is a <span class="highlight">highlighted</span> paragraph.</p>
+  <p id="special">This paragraph has an ID.</p>
+
+  <h2 class="sticky-box">2. Sticky Heading (scroll to see effect)</h2>
+  <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scroll down...</p>
+  <p id="pseudo">Another text paragraph for testing selectors and pseudo-elements.</p>
+
+  <h2>3. Links and Forms</h2>
+  <a href="https://example.com" target="_blank">Open Example (new tab)</a><br><br>
+  <input type="text" placeholder="Focus me!">
+
+  <h2>4. Box Model</h2>
+  <div class="box">I am a simple box with padding, border, and margin.</div>
+
+  <h2>5. Positioning</h2>
+  <div class="relative-box">Relative Box</div>
+  <div class="absolute-box">Absolute Box</div>
+  <div class="fixed-box">Fixed Box</div>
+
+  <h2>6. Lists</h2>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <div id="space">
+  </div>
+
+</body>
+</html>
